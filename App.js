@@ -24,22 +24,38 @@ import DetailScreen from './lib/screens/DetailScreen';
 import HomeScreen from './lib/screens/HomeScreen';
 import { Provider } from 'react-redux';
 import Store from './lib/redux/store/Store';
+import { useTranslation } from 'react-i18next';
+import i18n from './lib/languages/i18n';
+// import { NavigationContainer } from '@react-navigation/native';
+// import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+// const Stack = createNativeStackNavigator();
 
 
 const App = () => {
-
+  const [t, i18n] = useTranslation();
   return (
     <Provider store={Store}>
       <SafeAreaView style={styles.appBackground}>
         <StatusBar translucent={true} backgroundColor="#000" hidden />
           <PagerView style={styles.pagerView} initialPage={0} showPageIndicator={true}>
             <View key="1">
-              <HomeScreen />
+              <HomeScreen screenProps={[t, i18n]}/>
             </View>
             <View key="2">
-              <DetailScreen />
+              <DetailScreen screenProps={[t, i18n]} />
             </View>
           </PagerView>
+          {/* <NavigationContainer>
+            <Stack.Screen
+             name="Home"
+             component={HomeScreen}
+            />
+            <Stack.Screen
+             name="Home"
+             component={DetailScreen}
+            />
+          </NavigationContainer> */}
         
       </SafeAreaView>
     </Provider>

@@ -1,0 +1,16 @@
+{
+    "translation": {
+      "Sunrise": "Sunrise",
+      "Sunset": "Sunset",
+      "Search" : "Search",
+      "High":"High",
+      "Low" : "Low",
+      "Pressure" : "Pressure",
+      "Humidity": "Humidity",
+      "Visibility":"Visibility",
+      "Wind" : "Wind",
+      "Feels_Like" : "Feels Like",
+      "Today_Forecast" :"Today's Forecast",
+      "Weekly_Forecast" : "Weekly Forecast"
+    }
+}

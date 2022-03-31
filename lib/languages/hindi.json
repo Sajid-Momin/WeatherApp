@@ -1,0 +1,16 @@
+{
+    "translation": {
+      "Sunrise": "सूर्योदय",
+      "Sunset": "सूर्यास्त",
+      "Search" : "खोज",
+      "High":"उच्च",
+      "Low" : "निम्न",
+      "Pressure" : "दबाव",
+      "Humidity": "आर्द्रता",
+      "Visibility":"दृश्यता",
+      "Wind" : "हवा",
+      "Feels_Like" : "ऐसा लगता है",
+      "Today_Forecast" :"आज का पूर्वानुमान",
+      "Weekly_Forecast" : "साप्ताहिक पूर्वानुमान"
+    }
+}
